@@ -1,0 +1,3 @@
+#define __LIGHT__ #fffafa
+#define __DARK__ #202020
+#define __GRAY__ #cfcaca
