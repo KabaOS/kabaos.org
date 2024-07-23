@@ -9,16 +9,25 @@
     <meta name="darkreader-lock">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/style.css">
-    <title>__TITLE__</title>
+#ifdef __TITLE__
+    <title>__TITLE__ | KabaOS</title>
+#else
+    <title>KabaOS</title>
+#endif
 </head>
 <body>
     <div id="header">
         <img src="/assets/KabaOS.svg">
+#ifdef __TITLE__
         <h1>__TITLE__</h1>
+#else
+        <h1>KabaOS</h1>
+#endif
     </div>
     <div class="container">
         <nav>
             <a href="/">Home</a>
+            <a href="/releases">Releases</a>
             <a href="https://github.com/KabaOS/KabaOS">Github</a>
         </nav>
     </div>

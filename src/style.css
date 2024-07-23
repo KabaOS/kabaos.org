@@ -46,6 +46,18 @@ img {
     max-width: 100%;
 }
 
+.has-pill {
+    display: flex;
+    align-items: center;
+}
+
+.has-pill > div {
+    background-color: #cfcaca33;
+    border-radius: 2px;
+    padding: 2px;
+    margin-left: 4px;
+}
+
 .container {
     border: __BORDER__ solid __LIGHT__;
     border-radius: 4px;
