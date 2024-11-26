@@ -1,20 +1,41 @@
 #include "../templates/header.html"
-    <h2>Welcome to KabaOS!</h2>
-    An I2P based OS made for security
-    <p>
-        KabaOS is a live operating system based off of Alpine Linux that aims
-        to help users stay anonymous online. All network traffic that is sent
-        out of your computer is routed through the I2P network, keeping your
-        data secure. KabaOS has programs for your every need (like a browser,
-        IRC client, etc.), with defaults that make it run correctly over I2P.
-    </p>
-    <p>
-        This is still in early alpha, and should not be considered battle
-        tested and fully secure. This should only be used for testing
-        purposes currently. There are a handful of preinstalled programs,
-        but they have been generally testing to make sure that they work
-        correctly under i2p, without any additional configuration from the user.
-    </p>
+    <h2>KabaOS</h1>
+    <p><strong>A Security-Focused Live OS for I2P</strong></p>
+
+    <p>KabaOS is a live operating system built on Alpine Linux, designed with privacy and security at its core. All network traffic is routed through the I2P (Invisible Internet Project) network, ensuring your online activities remain anonymous and secure. KabaOS includes a selection of pre-configured programs that are optimized for use over I2P, offering an easy-to-use, privacy-first environment.</p>
+
+    <p>This is still in early alpha, and should not be considered battle tested and fully secure. This should only be used for testing purposes currently. There are a handful of preinstalled programs, but they have been generally tested to make sure that they work correctly under I2P, without any additional configuration from the user.</p>
+
+    <h3>Key Features</h2>
+    <ul>
+        <li><strong>I2P-Enforced Network Routing</strong>: All network traffic is routed through the I2P network by default, ensuring complete anonymity.</li>
+        <li><strong>Encrypted Time Synchronization</strong>: Time sync is secured and encrypted to prevent time-based tracking.</li>
+        <li><strong>Encrypted DNS Queries</strong>: Your DNS requests are encrypted to protect your browsing activity.</li>
+        <li><strong>Mandatory I2P Routing</strong>: Network traffic is forced through I2P via iptables for added security.</li>
+        <li><strong>No Persistence</strong>: The system does not retain any data between sessions, providing a clean slate on every boot.</li>
+        <li><strong>Hardened Memory Allocator</strong>: Increased security to mitigate memory-based vulnerabilities.</li>
+        <li><strong>Minimal Firmware</strong>: The system only includes Wi-Fi firmware, reducing potential attack vectors.</li>
+        <li><strong>Secure Program Execution</strong>: Programs are executed with predefined <code>bubblewrap</code> configurations for sandboxing and isolation.</li>
+        <li><strong>Keystroke Anonymization</strong>: Keystrokes are anonymized to prevent keylogging and tracking.</li>
+        <li><strong>Custom Kernel Configuration</strong>: The kernel is specifically configured to enhance anonymity and privacy.</li>
+        <li><strong>USB-Triggered Auto Shutdown</strong>: The system automatically shuts down if a USB device is removed, preventing data leakage.</li>
+        <li><strong>Pre-configured for I2P</strong>: Essential programs come pre-configured to work seamlessly over the I2P network.</li>
+    </ul>
+
+    <h3>Included Programs</h2>
+    <p>KabaOS comes with a suite of privacy-focused applications, including:</p>
+    <ul>
+        <li><strong>Monero GUI Wallet</strong>: A secure cryptocurrency wallet that supports Monero.</li>
+        <li><strong>Eepshare</strong>: A custom tool for sharing files directly over the I2P network.</li>
+        <li><strong>Age Encryption</strong>: A simple and secure encryption tool for file encryption.</li>
+        <li><strong>Deluge</strong>: A lightweight, privacy-conscious BitTorrent client.</li>
+        <li><strong>KeePassXC</strong>: A secure password manager for storing sensitive credentials.</li>
+        <li><strong>Kleopatra</strong>: A graphical front-end for managing GPG keys and encryption.</li>
+        <li><strong>Nheko</strong>: A Matrix-based messaging client for encrypted communication.</li>
+        <li><strong>Pidgin</strong>: A multi-protocol messaging client supporting XMPP and IRC.</li>
+        <li><strong>LibreWolf</strong>: A privacy-focused web browser based on Firefox.</li>
+        <li><strong>Metadata Cleaner</strong>: A tool to remove metadata from files, ensuring your documents remain anonymous.</li>
+    </ul>
     <picture>
         <source srcset="/showcase/start.avif" type="image/avif">
         <img src="/showcase/start.png" alt="KabaOS once you boot it up. It shows the desktop environment and the welcoming program.">
